@@ -4,3 +4,31 @@
     box-sizing: border-box;
 }
 
+main{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: #080B12;
+}
+
+footer{
+    height: 100px;
+    background-color: #222222;
+}
+
+.sidebar{
+    width: 150px;
+    height: 100%;
+    background-color: #000;
+}
+
+.content{
+    width: calc(100% - 150px);
+    background-color: #141922;
+    overflow-y: auto;
+}
