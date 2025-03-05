@@ -90,12 +90,19 @@ ul{
 
 /* Utilities----------END */
 
+.button{
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
 /* Sidebar */
 
 .head-sidebar{
     margin-left: 15px;
     margin-top: 15px;
-    margin-bottom: 650px;
+    margin-bottom: 640px;
 }
 
 #hidden-logo{
@@ -192,9 +199,28 @@ ul{
 }
 /* End Sidebar */
 
-.button{
-    display: inline-block;
-    padding: 10px 25px;
-    border: 2px solid white;
-    border-radius: 20px;
+/* footer */
+
+.footer-por{
+    width: 250px;
+}
+
+.ongoing-song{
+    height: 60px;
+    width: 60px;
+}
+
+.ongoing-song img{
+    height: 100%;
+}
+
+.song-info{
+    padding: 0 10px;
+}
+
+/* Color */
+
+
+.grey-txt{
+    color: #6C6F74;
 }
