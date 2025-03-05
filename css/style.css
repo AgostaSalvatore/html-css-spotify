@@ -205,6 +205,12 @@ ul{
     width: 250px;
 }
 
+.footer-play{
+    width: calc(100% - 450px);
+}
+
+/* left side */
+
 .ongoing-song{
     height: 60px;
     width: 60px;
@@ -220,6 +226,47 @@ ul{
 
 .song-favourite{
     width: 20%;
+}
+
+/* center */
+
+.play-controls{
+    width: 40%;
+    min-width: 200px;
+}
+
+.play-progress{
+    width: 100%;
+    padding: 10 0px;
+}
+
+.time{
+    width: 10%;
+    min-width: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.progress-bar{
+    background-color: #5A5A5A;
+    height: 4px;
+    width: 80%;
+    border-radius: 2px;
+}
+
+.progress-bar-fill{
+    width: 20%;
+    background-color: #C1C1C1;
+    border-radius: 2px;
+}
+
+/* right side */
+
+.volume-bar{
+    background-color: #5A5A5A;
+    height: 4px;
+    width: 50%;
+    border-radius: 2px;
 }
 
 /* Color */
