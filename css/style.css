@@ -101,6 +101,24 @@ ul{
     margin: 20px 20px;
 }
 
+.card{
+    padding: 10px;
+    width: calc(100% / 6);
+}
+
+.card-img{
+    position: relative;
+    width: 100%;
+}
+
+.album-preview{
+  width: 100%;
+}
+
+.album-preview img{
+    width: 100%;
+}
+
 /* Utilities----------END */
 
 .button-upgrade{
