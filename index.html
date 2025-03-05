@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
-        <div class="sidebar">
+        <div class="sidebar d-flex direction-column justify-content-space-between">
             <div class="head-sidebar">
                 <!-- Logo Desktop Tablet -->
-                <div class="logo"> 
+                <div id="logo"> 
                     <img src="./img/logo.svg" alt="Spotify Logo">
                 </div>
                 <!-- Logo Nascosto Mobile -->
-                <div class="hidden-logo">
+                <div id="hidden-logo">
                     <img src="./img/logo-small.svg" alt="Logo Mobile">
                 </div>
 
                 <!-- List -->
-                <ul>
+                <ul id="firstlist-sidebar">
                     <li>
                         <a href="#">
                             <div>
@@ -41,64 +42,73 @@
                         <a href="#">
                             <div>
                                 <img src="./img/libreria.svg" alt="Library">
-                                <span>Your Library</span>
+                                <span>La tua libreria</span>
                             </div>
                         </a>
                     </li>
                 </ul>
 
-                <div>
-                    Playlist
-                    <a href="#">
-                        <div class="add-playlist">
-                            +
+                <div id="playlist-section" class="no-mobile">
+                        <div class="bold">
+                            PLAYLIST
                         </div>
-                        Crea Playlist
-                    </a>
+                        <a href="#">
+                            <div class="add-playlist">
+                                <div class="plus-simble">
+                                    +
+                                </div>
+                            </div>
+                            Crea Playlist
+                        </a>
+                    
+
+                    <ul>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                    </ul>
                 </div>
+            </div>
 
-                <ul>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                </ul>
-
-                <div class="down-sidebar">
-                   <div>
-                        <div>
+            <div class="down-sidebar">
+                <div id="download-section">
+                        <div class="download-img">
                             <img src="./img/download.svg" alt="DW icon">
                         </div>
-                        <span>Install App</span>
-                   </div>
-                   <hr>
-                   <div>
-                        <div>
-                            <img src="./img/profile.svg" alt="Profile Picture ">
+                        <div class="no-mobile">
+                            Install App
                         </div>
-                        John Doe
-                   </div>
                 </div>
-
-
-            </div>
+                <hr>
+                <div id="user-section">
+                    <div class="profile-icon">
+                         <img src="./img/profile.svg" alt="Profile Picture ">
+                    </div>
+                    <div>
+                        <div class="bold">
+                            Jonh Doe
+                        </div>
+                    </div>
+                </div>
+             </div>
         </div>
 
         <div class="content">

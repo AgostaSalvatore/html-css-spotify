@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
 main{
     height: calc(100vh - 100px);
     display: flex;
@@ -19,39 +24,177 @@ header{
 footer{
     height: 100px;
     background-color: #222222;
+    padding: 20px 15px;
 }
 
 .sidebar{
-    width: 150px;
+    width: 250px;
     height: 100%;
-    background-color: #000;
+    background-color: black;
 }
 
 .content{
-    width: calc(100% - 150px);
+    width: calc(100% - 250px);
     background-color: #141922;
     overflow-y: auto;
 }
 
-.hidden-logo{
-    display: none;
-}
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: inherit;
 }
 
-.sidebar ul{
+ul{
     list-style: none;
 }
 
-.sidebar ul img{
-    width: 10%;
+/* Utilities */
+
+.d-flex{
+    display: flex;
 }
 
-.sidebar ul li{
+.direction-column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+    align-content: center;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* .no-mobile{
+    display: none;
+} */
+
+/* Utilities----------END */
+
+/* Sidebar */
+
+.head-sidebar{
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 650px;
+}
+
+#hidden-logo{
+    display: none;
+}
+
+#logo , #hidden-logo{
+    height: 100px;
+    padding: 20px;
+}
+
+#logo img, #hidden-logo img{
+    height: 100%;
+}
+
+#firstlist-sidebar{
+    padding: 20px;
+}
+
+#firstlist-sidebar li a{
     display: flex;
     align-items: center;
-    padding: 10px;
+    align-content: center;
+}
+
+#firstlist-sidebar > li > a > div{
+    display: inline-block;
+    height: 25px;
+}
+
+#firstlist-sidebar > li > a > div img{
+    height: 100%;
+}
+
+#playlist-section{
+    padding: 20px;
+}
+
+#playlist-section a{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.plus-simble{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add-playlist{
+    height: 30px;
+    width: 30px;
+    background-color: #A3A3A3;
+    position: relative;
+    display: inline-block;
+}
+
+.down-sidebar{
+    padding: 20px;
+}
+
+#download-section, #user-section{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    align-content: center;
+}
+
+.download-img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.profile-icon{
+    height: 30px;
+    width: 30px;
+    background-color: #A3A3A3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.profile-icon img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.download-img img{
+    height: 100%
+}
+/* End Sidebar */
+
+.button{
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid white;
+    border-radius: 20px;
 }
