@@ -102,8 +102,8 @@ ul{
 }
 
 .card{
-    padding: 10px;
-    width: calc(100% / 6);
+    padding-right: 20px;
+    width: 16%;
 }
 
 .card-img{
@@ -111,11 +111,11 @@ ul{
     width: 100%;
 }
 
-.album-preview{
+.album-preview , .artist-preview{
   width: 100%;
 }
 
-.album-preview img{
+.album-preview img, .artist-preview img{
     width: 100%;
 }
 
@@ -132,6 +132,16 @@ ul{
     color: #6C6F74;
 }
 
+.artist-preview img, .artist-hover{
+    border-radius: 50%;
+}
+
+.recent, .for-user, .popular-artist{
+    padding-top: 30px;
+}
+
+/* Album Hover */
+
 /* Utilities----------END */
 
 .button-upgrade{
@@ -146,7 +156,7 @@ ul{
 .head-sidebar{
     margin-left: 15px;
     margin-top: 15px;
-    margin-bottom: 500px;
+    margin-bottom: 480px;
 }
 
 #hidden-logo{
@@ -162,8 +172,8 @@ ul{
     height: 100%;
 }
 
-#firstlist-sidebar{
-    padding: 20px;
+#firstlist-sidebar li{
+    padding: 5px 20px;
 }
 
 #firstlist-sidebar li a{
@@ -174,7 +184,7 @@ ul{
 
 #firstlist-sidebar > li > a > div{
     display: inline-block;
-    height: 25px;
+    height: 40px;
 }
 
 #firstlist-sidebar > li > a > div img{
@@ -182,7 +192,13 @@ ul{
 }
 
 #playlist-section{
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+#playlist-list li{
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 #playlist-section a{
@@ -204,6 +220,8 @@ ul{
     background-color: #A3A3A3;
     position: relative;
     display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .down-sidebar{
@@ -256,8 +274,8 @@ ul{
 /* left side */
 
 .ongoing-song{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 }
 
 .ongoing-song img{
@@ -281,7 +299,7 @@ ul{
 
 .play-progress{
     width: 100%;
-    padding: 10 0px;
+    padding: 10px 0px;
 }
 
 .time{
@@ -318,4 +336,8 @@ ul{
 
 .grey-txt{
     color: #6C6F74;
+}
+
+.green-line{
+    border-left: 3px solid #ADFF2F;
 }
